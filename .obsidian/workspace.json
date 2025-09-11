@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "uni/1. Semester/DTG/Blok 1.md",
-                "mode": "preview",
+                "file": "uni/1. Semester/DTG/Blok 1/Cartesian products and ordered pairs.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Blok 1"
+              "title": "Cartesian products and ordered pairs"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "uni/1. Semester/DTG/Blok 1.md",
+                "file": "uni/1. Semester/DTG/Blok 1/Cartesian products and ordered pairs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Blok 1"
+              "title": "Backlinks for Cartesian products and ordered pairs"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "uni/1. Semester/DTG/Blok 1.md",
+                "file": "uni/1. Semester/DTG/Blok 1/Cartesian products and ordered pairs.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Blok 1"
+              "title": "Outline of Cartesian products and ordered pairs"
             }
           }
         ],
@@ -156,7 +156,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,9 +172,28 @@
   },
   "active": "3752d603635d85d6",
   "lastOpenFiles": [
-    "Blok 1.pdf",
-    "exam/Studiestartsprøve.md",
-    "uni/1. Semester/DTG/Blok 1.md",
-    "exam"
+    "uni/1. Semester/DTG/Blok 1/Sets.md",
+    "uni/1. Semester/DTG/Blok 1/Quantors and propositional functions.md",
+    "uni/1. Semester/DTG/Blok 1/Propositions and operations.md",
+    "uni/1. Semester/DTG/Blok 1/Cartesian products and ordered pairs.md",
+    "uni/1. Semester/DTG/Blok 1/Logical equivalence, tautologies and contradictions.md",
+    "uni/1. Semester/DTG/Blok 1/Subsets, cardinality of sets, and set operations.md",
+    "uni/1. Semester/DTG/Blok 1/Truth tables and bit operations.md",
+    "uni/1. Semester/DTG/Blok 1/Exercises/Session 1.1.md",
+    "uni/books/Problembaseret-Læring-og-Projektarbejde-2E.pdf",
+    "uni/books/Problem Solving and Program Design in C 8th Edition - Jeri Hanly - Pearson.pdf",
+    "uni/books/[Book] Discrete mathematics and its applications (2019)_0.pdf",
+    "uni/[Book] Discrete mathematics and its applications (2019)_0.pdf",
+    "uni/Problem Solving and Program Design in C 8th Edition - Jeri Hanly - Pearson.pdf",
+    "uni/Problembaseret-Læring-og-Projektarbejde-2E.pdf",
+    "uni/books",
+    "uni/untitled folder",
+    "untitled folder",
+    "Screenshot 2025-09-10 at 11.07.07.png",
+    "Screenshot 2025-09-10 at 10.31.09.png",
+    "Screenshot 2025-09-10 at 10.29.30.png",
+    "uni/1. Semester/DTG/Blok 1/Exercises",
+    "uni/1. Semester/DTG/Untitled.md",
+    "exam/Studiestartsprøve.md"
   ]
 }
