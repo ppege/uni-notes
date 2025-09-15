@@ -1,0 +1,99 @@
+## Subsets
+The set $A$ is a subset of the set $B$ if and only if every element of $A$ is also an element of $B$. 
+$$
+\forall x\in A, x\in B
+$$
+$$
+\forall x(x\in A\rightarrow x\in B)
+$$
+For any set $S$ it holds that $\emptyset\subseteq S$ and $S\subseteq S$. 
+### Proper subsets
+$A$ is a proper subset of $B$ if $A\subseteq B$, but $A\neq B$. Here we use the notation $A\subset B$.
+### What is *not* a subset?
+There are cases where it may be confusing whether one set is a subset of another set. For example:
+$$
+\set{a}\not\subseteq\set{\set{a},\set{b}}
+$$
+Since $\{a\}$ is actually an element *in* the set on the right, therefore it is only the case that
+$$
+\begin{align}
+\set{a}&\in\set{\set{a},\set{b}}, \\
+\set{\set{a}}&\subseteq\set{\set{a},\set{b}}.
+\end{align}
+$$
+## Power sets
+A power set of a set, $A$, notated as $\mathcal{P}(A)$, is the set containing all possible subsets of $A$. This can be represented as
+$$
+x\in \mathcal{P}(A)\iff x\subseteq A.
+$$
+In [[Sets|set builder notation]], this can be represented as
+$$
+\mathcal{P}(A)=\set{x|x\subseteq A},
+$$
+where $x$ is also a set. An example of a power set can look like this:
+$$
+\begin{align}
+A&=\set{a,b,c} \\
+\mathcal{P}(A)&=\set{
+	\set{a},
+	\set{b},
+	\set{c},
+	\set{a,b},
+	\set{a,c},
+	\set{b,c},
+	\set{a,b,c},
+	\emptyset
+}
+\end{align}
+$$
+
+^9016f3
+
+As we can see, the set $A$ containing 3 elements has a power set containing 8 elements. For each element in $A$, we have the choice of whether or not to add it to a possible subset. Therefore, the [[Cardinality of sets and set operations|cardinality]] of a power set follows
+$$
+|A|=n\implies|\mathcal{P}(A)|=2^{|A|}=2^n.
+$$
+So if we have a set $A$ with a cardinality of 8, for example, we get
+$$
+|A|=8\implies|\mathcal{P}(A)|=2^8=256.
+$$
+Nested power sets create power towers when looking at the cardinality:
+$$
+\begin{align}
+|A|&=m \\
+|\mathcal{P}(\mathcal{P}(\mathcal{P}(A)))|&=2^{|\mathcal{P}(\mathcal{P}(A))|} \\
+&=2^{2^{|\mathcal{P}(A)|}} \\
+&=2^{2^{2^{|A|}}} \\
+&=2^{2^{2^m}}
+\end{align}
+$$
+### Is $A$ a subset of $\mathcal{P}(A)$?
+It can be confusing to differentiate between the meanings of subsets and elements when talking about power sets. For a set $A$ containing the empty set, we can observe that
+$$
+A=\set{\emptyset}\implies \mathcal{P}(A)=\set{\emptyset,\set{\emptyset}}.
+$$
+For this case, it is true that $A$ is a subset of its own power set $\mathcal{P}(A)$, so
+$$
+\exists A,A\subseteq p(A).
+$$
+We must not be quick to assume that this is true for *every* $A$, however, since
+$$
+A=\set{a,b}\implies \mathcal{P}(A)=\set{\set{a},\set{b},\set{a,b},\emptyset}
+$$
+In this case, 
+$$
+A\not\subseteq \mathcal{P}(A).
+$$
+Because we have this counterexample, our final statement about whether $A$ is a subset of $\mathcal{P}(A)$ must be
+$$
+\exists A,A\subseteq \mathcal{P}(A)\wedge\neg(\forall A,A\subseteq \mathcal{P}(A)).
+$$
+Or: while there exists a set  which is a subset of its power set $\mathcal{P}(A)$, this is not true for all $A$. In fact, the only sets for which it is true that the set is a subset of its own power set, are sets that contain the empty set, or the empty set itself, since it is always true that $\emptyset\subseteq S$. At the same time, though, the following is true:
+$$
+\forall A,A\in \mathcal{P}(A).
+$$
+This is where the difference between a set being a subset of another set, and a set being a member of another set, or the difference between $A\subseteq B$ and $A\in B$, gets a little confusing. In [[#^9016f3]], we can observe that $\set{a,b,c}$ is indeed a member of $\mathcal{P}(A)$, but it is **not** a subset, because if that were the case, it would be the case that
+$$
+a\in\mathcal{P}(A)\wedge b\in\mathcal{P}(A)\wedge c\in\mathcal{P}(A),
+$$
+and this is, in fact, not the case.  Only the set *containing* $a$, $b$, and $c$ are in the power set of $A$. Not the actual elements.

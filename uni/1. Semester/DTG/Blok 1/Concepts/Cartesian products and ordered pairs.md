@@ -43,7 +43,7 @@ $$
 A_1\bigtimes A_2\bigtimes\ldots\bigtimes A_n=\{(a_1,a_2,\ldots,a_n)|a_1\in A_1\wedge a_2\in A_2\wedge\ldots\wedge a_n\in A_n\}
 $$
 ### Properties of tuples
->[!warning] **Not from course**: This section contains information gathered from sources other than what the DTG course provides
+>[!warning] **Not from course**: This section contains information gathered from sources other than what the DTG course provides.
 
 The general rule for the identity of two $n$-tuples is
 $$
@@ -64,4 +64,23 @@ $$
 This process can be applied to a tuple of any $n$ elements, for example a tuple of 6 elements has the recursive definition
 $$
 (a,b,c,d,e,f):=(((((a,b),c),d),e),f).
+$$
+Note that the "reverse" can also be used to represent an $n$-tuple as an ordered pair:
+$$
+(a,b,c,d,e,f):=(a,(b,(c,(d,(e,f)))))
+$$
+Any $n$-tuple can, in this way, be expanded to being expressed purely as a set, though it will look ridiculous.
+### Cartesian square
+$A\bigtimes A$ can be written as $A^2$. For example, let $A=\{a,b\}$, then
+$$
+A^2=\{(a,a),(a,b),(b,a),(b,b)\}
+$$
+### Cartesian products involving the empty set
+When the empty set is involved in a cartesian product, we get the empty set:
+$$
+\begin{align}
+\text{Example: }A&=\{a,b,c\} \\
+A\bigtimes\emptyset&=\emptyset \\
+\emptyset\bigtimes A&=\emptyset
+\end{align}
 $$

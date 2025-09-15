@@ -1,14 +1,3 @@
-## Subsets
-The set $A$ is a subset of the set $B$ if and only if every element of $A$ is also an element of $B$. 
-$$
-\forall x\in A, x\in B
-$$
-$$
-\forall x(x\in A\rightarrow x\in B)
-$$
-For any set $S$ it holds that $\emptyset\subseteq S$ and $S\subseteq S$. 
-### Proper subsets
-$A$ is a proper subset of $B$ if $A\subseteq B$, but $A\neq B$. Here we use the notation $A\subset B$.
 ## Cardinality of sets
 A set $S$ is finite if it contains a finite number $n$ of elements. The size $|S|$ (cardinality) of a finite set $S$ is then defined to be the number $n$ of elements it contains. For example: 
 $$
