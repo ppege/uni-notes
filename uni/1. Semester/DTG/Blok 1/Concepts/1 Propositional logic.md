@@ -1,3 +1,4 @@
+# Propositional logic
 > [!info]
 > The course is split into 4 blocks, each ending with a *workshop* in which you and your group spend 6 hours working on a massive sheet about the contents of the block. During the exam you will present one of the four workshops, so be sure to write things down!
 

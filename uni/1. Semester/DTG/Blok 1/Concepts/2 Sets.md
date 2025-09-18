@@ -1,4 +1,4 @@
-# Sets
+# Set theory
 A **set** is an unordered collection of distinct objects, called elements or members. We write $e\in S$ if the element $e$ is in the set $S$. A set is usually denoted by listing its elements: 
 $$
 B=\set{0, 1}
@@ -15,14 +15,14 @@ A set containing a single element is often referred to as a singleton. For examp
 ### Important sets
 There are a few important sets denoted by double-lined capital letters:
 $$
-\begin{align}
+\begin{aligned}
 \mathbb{N}_0&=\set{0,1,2,3,\ldots}\text{ (the natural numbers including 0)} \\
 \mathbb{N}&=\set{1,2,3,\ldots}\text{ (the natural numbers excluding 0)} \\
 \mathbb{Z}&=\set{\ldots,-1,-2,0,1,2,\ldots}\text{ (all integers, including 0 and negative numbers)} \\
 \mathbb{Q}&\text{ is the set of all rational numbers, so excluding $\pi$, for example.} \\
 \mathbb{R}&\text{ is the set of all real numbers, so including $\pi$, but excluding all complex numbers.} \\
 \mathbb{C}&\text{ is the set of all complex numbers.}
-\end{align}
+\end{aligned}
 $$
 This styling of the symbols is called blackboard bold. Not relevant but good to know.
 ## Set builder notation

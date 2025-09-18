@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "a46e34b9693b1fee",
+        "id": "a8b78d6e949af1c3",
         "type": "tabs",
         "children": [
           {
-            "id": "3752d603635d85d6",
+            "id": "9f4ed6e2c6921dc5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "uni/1. Semester/DTG/Blok 1/Overview.md",
+                "file": "uni/1. Semester/DTG/Blok 1/Concepts/2.4 Relations.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Overview"
+              "title": "2.4 Relations"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "uni/1. Semester/DTG/Blok 1/Overview.md",
+                "file": "uni/1. Semester/DTG/Blok 1/Concepts/2.4 Relations.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Overview"
+              "title": "Outline of 2.4 Relations"
             }
           }
         ],
@@ -169,42 +169,45 @@
       "bases:Create new base": false
     }
   },
-  "active": "f0f35744822ace1b",
+  "active": "9f4ed6e2c6921dc5",
   "lastOpenFiles": [
+    "uni/1. Semester/DTG/Blok 1/Concepts/2.5 Closures of relations.md",
+    "uni/1. Semester/DTG/Blok 1/concepts export/2.4 Relations.md",
+    "uni/1. Semester/DTG/Blok 1/concepts export/2 Sets.md",
+    "uni/1. Semester/DTG/Blok 1/concepts export/2.5 Closures of relations.md",
+    "uni/1. Semester/DTG/Blok 1/concepts export/2.3 Cartesian products and ordered pairs.md",
+    "uni/1. Semester/DTG/Blok 1/concepts export/2.2 Subsets and power sets.md",
+    "uni/1. Semester/DTG/Blok 1/concepts export/2.1 Cardinality of sets and set operations.md",
+    "uni/1. Semester/DTG/Blok 1/concepts export/1 Propositional logic.md",
+    "uni/1. Semester/DTG/Blok 1/concepts export/1.3 Quantors and propositional functions.md",
+    "uni/1. Semester/DTG/Blok 1/concepts export/1.2 Logical equivalence, tautologies and contradictions.md",
+    "uni/1. Semester/DTG/Blok 1/concepts export/1.1 Truth tables and bit operations.md",
+    "uni/1. Semester/DTG/Blok 1/Concepts/1 Propositional logic.md",
+    "uni/1. Semester/DTG/Blok 1/concepts export/packages.tex",
+    "uni/1. Semester/DTG/Blok 1/Concepts/1.3 Quantors and propositional functions.md",
+    "uni/1. Semester/DTG/Blok 1/Concepts/1.1 Truth tables and bit operations.md",
+    "uni/1. Semester/DTG/Blok 1/concepts export",
+    "uni/1. Semester/DTG/Blok 1/Concepts/2.4 Relations.md",
+    "uni/1. Semester/DTG/Blok 1/Concepts/2.4 Relations.pdf",
+    "uni/1. Semester/DTG/Blok 1/Concepts/2 Sets.md",
+    "uni/1. Semester/DTG/Blok 1/Concepts/2 Sets.pdf",
+    "uni/1. Semester/DTG/Blok 1/Concepts/1.3 Quantors and propositional functions.pdf",
+    "uni/1. Semester/DTG/Blok 1/Concepts/1.2 Logical equivalence, tautologies and contradictions.md",
+    "uni/1. Semester/DTG/Blok 1/Concepts/1.2 Logical equivalence, tautologies and contradictions.pdf",
+    "uni/1. Semester/DTG/Blok 1/Concepts/1.1 Truth tables and bit operations.pdf",
+    "uni/1. Semester/DTG/Blok 1/Concepts/1 Propositional logic.pdf",
+    "uni/1. Semester/DTG/Blok 1/Concepts/2.3 Cartesian products and ordered pairs.md",
+    "uni/1. Semester/DTG/Blok 1/Concepts/2.2 Subsets and power sets.md",
+    "uni/1. Semester/DTG/Blok 1/Concepts/2.1 Cardinality of sets and set operations.md",
+    "uni/1. Semester/DTG/Blok 1/Concepts/_TOC_.md",
     "uni/1. Semester/DTG/Blok 1/Overview.pdf",
-    "Blok 1.pdf",
     "uni/1. Semester/DTG/Blok 1/Overview.md",
-    "uni/1. Semester/DTG/Blok 1/Concepts/Closures of relations.md",
-    "uni/1. Semester/DTG/Blok 1/Concepts/Relations.md",
-    "uni/1. Semester/DTG/Blok 1/Concepts/Subsets and power sets.md",
-    "uni/1. Semester/DTG/Blok 1/Concepts/Sets.md",
-    "uni/1. Semester/DTG/Blok 1/Concepts/Cartesian products and ordered pairs.md",
-    "uni/1. Semester/DTG/Blok 1/Concepts/Quantors and propositional functions.md",
-    "uni/1. Semester/DTG/Blok 1/Concepts/Cardinality of sets and set operations.md",
-    "uni/1. Semester/DTG/Blok 1/Concepts/Logical equivalence, tautologies and contradictions.md",
-    "uni/1. Semester/DTG/Blok 1/Concepts/Truth tables and bit operations.md",
-    "uni/books/problem_solving_and_program_design_in_c.pdf",
-    "uni/books/Problem Solving and Program Design in C 8th Edition - Jeri Hanly - Pearson.pdf",
+    "uni/1. Semester/DTG/Blok 1/Concepts/output.pdf",
+    "uni/1. Semester/DTG/Blok 1/Concepts/Untitled.md",
     "uni/1. Semester/DTG/Blok 1/_Index_of_Blok 1.md",
-    "code/IMPR/lecture-2-ppege/src/a.out",
-    "code/IMPR/lecture-2-ppege/src/exercise-PSPDC-88-2.c",
-    "code/IMPR/lecture-2-ppege/src/exercise-PSPDC-88-1.c",
-    "code/IMPR/lecture-2-ppege/src/exercise-PSPDC-125-11.c",
-    "code/IMPR/lecture-2-ppege/src/exercise-PSPDC-124-9.c",
-    "code/IMPR/lecture-2-ppege/src/exercise-PSPDC-106-3.c",
-    "code/IMPR/lecture-2-ppege/src/exercise-2.7.c",
     "code/IMPR/lecture-2-ppege/README.md",
-    "uni/1. Semester/DTG/Blok 1/Concepts/Propositions and operations.md",
-    "cardinality.md",
-    "uni/1. Semester/DTG/Blok 1/Exercises/Session 1.1.md",
-    "uni/1. Semester/DTG/_Index_of_DTG.md",
-    "uni/_Index_of_uni.md",
-    "uni/1. Semester/_Index_of_1. Semester.md",
-    "_Index_of_uni.md",
     "Screenshot 2025-09-10 at 11.07.07.png",
     "Screenshot 2025-09-10 at 10.31.09.png",
-    "Screenshot 2025-09-10 at 10.29.30.png",
-    "uni/1. Semester/DTG/Untitled.md",
-    "exam/Studiestartsprøve.md"
+    "Screenshot 2025-09-10 at 10.29.30.png"
   ]
 }
