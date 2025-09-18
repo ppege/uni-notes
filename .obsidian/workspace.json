@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "uni/1. Semester/DTG/Blok 1/Concepts/Subsets and power sets.md",
+                "file": "uni/1. Semester/DTG/Blok 1/Concepts/Relations.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Subsets and power sets"
+              "title": "Relations"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 291
   },
   "right": {
     "id": "c4fbc1dcca378451",
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "uni/1. Semester/DTG/Blok 1/Concepts/Subsets and power sets.md",
+                "file": "uni/1. Semester/DTG/Blok 1/Concepts/Relations.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Subsets and power sets"
+              "title": "Outline of Relations"
             }
           }
         ],
@@ -171,32 +171,34 @@
   },
   "active": "3752d603635d85d6",
   "lastOpenFiles": [
-    "uni/1. Semester/DTG/Blok 1/Concepts/Cartesian products and ordered pairs.md",
-    "uni/1. Semester/DTG/Blok 1/Concepts/Sets.md",
     "uni/1. Semester/DTG/Blok 1/Concepts/Subsets and power sets.md",
-    "uni/1. Semester/DTG/Blok 1/Concepts/Logical equivalence, tautologies and contradictions.md",
-    "uni/1. Semester/DTG/Blok 1/Concepts/Propositions and operations.md",
+    "uni/1. Semester/DTG/Blok 1/Concepts/Relations.md",
+    "uni/1. Semester/DTG/Blok 1/Concepts/Sets.md",
+    "uni/1. Semester/DTG/Blok 1/Concepts/Cartesian products and ordered pairs.md",
     "uni/1. Semester/DTG/Blok 1/Concepts/Quantors and propositional functions.md",
-    "uni/1. Semester/DTG/Blok 1/Concepts/Truth tables and bit operations.md",
-    "code/IMPR/forelæsning2/main.c",
-    "code/IMPR/forelæsning2/miles_to_kms.c",
-    "code/IMPR/forelæsning2/a.out",
-    "code/IMPR/forelæsning2",
-    "code/IMPR",
-    "code",
-    "cardinality.md",
     "uni/1. Semester/DTG/Blok 1/Concepts/Cardinality of sets and set operations.md",
+    "uni/1. Semester/DTG/Blok 1/Concepts/Logical equivalence, tautologies and contradictions.md",
+    "uni/1. Semester/DTG/Blok 1/Concepts/Truth tables and bit operations.md",
+    "uni/books/problem_solving_and_program_design_in_c.pdf",
+    "uni/books/Problem Solving and Program Design in C 8th Edition - Jeri Hanly - Pearson.pdf",
     "uni/1. Semester/DTG/Blok 1/_Index_of_Blok 1.md",
-    "uni/1. Semester/DTG/Blok 1/Concepts/Untitled",
+    "code/IMPR/lecture-2-ppege/src/a.out",
+    "code/IMPR/lecture-2-ppege/src/exercise-PSPDC-88-2.c",
+    "code/IMPR/lecture-2-ppege/src/exercise-PSPDC-88-1.c",
+    "code/IMPR/lecture-2-ppege/src/exercise-PSPDC-125-11.c",
+    "code/IMPR/lecture-2-ppege/src/exercise-PSPDC-124-9.c",
+    "code/IMPR/lecture-2-ppege/src/exercise-PSPDC-106-3.c",
+    "code/IMPR/lecture-2-ppege/src/exercise-2.7.c",
+    "code/IMPR/lecture-2-ppege/src/exercise-2.6.c",
+    "code/IMPR/lecture-2-ppege/README.md",
+    "uni/1. Semester/DTG/Blok 1/Concepts/Propositions and operations.md",
+    "cardinality.md",
     "uni/1. Semester/DTG/Blok 1/Overview.md",
     "uni/1. Semester/DTG/Blok 1/Exercises/Session 1.1.md",
     "uni/1. Semester/DTG/_Index_of_DTG.md",
     "uni/_Index_of_uni.md",
     "uni/1. Semester/_Index_of_1. Semester.md",
     "_Index_of_uni.md",
-    "Overview.pdf",
-    "uni/1. Semester/DTG/Blok 1/Concepts",
-    "uni/books/Problembaseret-Læring-og-Projektarbejde-2E.pdf",
     "Screenshot 2025-09-10 at 11.07.07.png",
     "Screenshot 2025-09-10 at 10.31.09.png",
     "Screenshot 2025-09-10 at 10.29.30.png",
