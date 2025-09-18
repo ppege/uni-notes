@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "uni/1. Semester/DTG/Blok 1/Concepts/Relations.md",
+                "file": "uni/1. Semester/DTG/Blok 1/Overview.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Relations"
+              "title": "Overview"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "uni/1. Semester/DTG/Blok 1/Concepts/Relations.md",
+                "file": "uni/1. Semester/DTG/Blok 1/Overview.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Relations"
+              "title": "Outline of Overview"
             }
           }
         ],
@@ -169,10 +169,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "3752d603635d85d6",
+  "active": "f0f35744822ace1b",
   "lastOpenFiles": [
-    "uni/1. Semester/DTG/Blok 1/Concepts/Subsets and power sets.md",
+    "uni/1. Semester/DTG/Blok 1/Overview.pdf",
+    "Blok 1.pdf",
+    "uni/1. Semester/DTG/Blok 1/Overview.md",
+    "uni/1. Semester/DTG/Blok 1/Concepts/Closures of relations.md",
     "uni/1. Semester/DTG/Blok 1/Concepts/Relations.md",
+    "uni/1. Semester/DTG/Blok 1/Concepts/Subsets and power sets.md",
     "uni/1. Semester/DTG/Blok 1/Concepts/Sets.md",
     "uni/1. Semester/DTG/Blok 1/Concepts/Cartesian products and ordered pairs.md",
     "uni/1. Semester/DTG/Blok 1/Concepts/Quantors and propositional functions.md",
@@ -189,11 +193,9 @@
     "code/IMPR/lecture-2-ppege/src/exercise-PSPDC-124-9.c",
     "code/IMPR/lecture-2-ppege/src/exercise-PSPDC-106-3.c",
     "code/IMPR/lecture-2-ppege/src/exercise-2.7.c",
-    "code/IMPR/lecture-2-ppege/src/exercise-2.6.c",
     "code/IMPR/lecture-2-ppege/README.md",
     "uni/1. Semester/DTG/Blok 1/Concepts/Propositions and operations.md",
     "cardinality.md",
-    "uni/1. Semester/DTG/Blok 1/Overview.md",
     "uni/1. Semester/DTG/Blok 1/Exercises/Session 1.1.md",
     "uni/1. Semester/DTG/_Index_of_DTG.md",
     "uni/_Index_of_uni.md",
