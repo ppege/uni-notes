@@ -1,0 +1,4 @@
+/Users/toof/uni/code/IMPR/forelæsning5/cmakehow/build/CMakeFiles/circle.dir
+/Users/toof/uni/code/IMPR/forelæsning5/cmakehow/build/CMakeFiles/main.dir
+/Users/toof/uni/code/IMPR/forelæsning5/cmakehow/build/CMakeFiles/edit_cache.dir
+/Users/toof/uni/code/IMPR/forelæsning5/cmakehow/build/CMakeFiles/rebuild_cache.dir
