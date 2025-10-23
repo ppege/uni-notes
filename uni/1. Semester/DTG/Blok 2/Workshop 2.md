@@ -10,7 +10,18 @@ A function $f : A\rightarrow B$ is **injective** if and only if for all $x,y\in 
 $$
 \forall x,y\in A, f(x)=f(y)\implies x=y.
 $$
-$f$ is injective, as each element in the list has its own unique index.
+$f$ is not injective, as its domain is $A\bigtimes\mathbb{Z}$, means we can supply any finite list of integers to the function. It's entirely possible to have two situations:
+$$
+f((1,2,3),3)=2
+$$
+$$
+f((3,2,1),2)=2
+$$
+Where the condition
+$$
+\forall x,y\in A,f(x)=f(y)\wedge x\neq y
+$$
+Since we have two different values in the domain giving the same value from the codomain.
 ### Surjective property
 A function $f:A\rightarrow B$ is **surjective** if the image of $f$ is the whole codomain. This effectively means that every element of $B$ is the image of an element in $A$. Equivalently, a function $f:A\rightarrow B$ is surjective if
 $$
@@ -20,7 +31,7 @@ Since the codomain $\mathbb{Z}_{\geq -1}$ is an infinite set, and the codomain $
 ### Bijective property
 A function $f:A\rightarrow B$ is **bijective** if it is both injective and surjective. We then say $f$ is a **bijection**. This effectively means that every element in $B$  is the image of exactly one element in $A$.
 
-$f$ is obviously not bijective, since it is not surjective.
+$f$ is neither injective nor surjective, so it is obviously also not bijective.
 
 ![[Pasted image 20251023093123.png]]
 Done!
