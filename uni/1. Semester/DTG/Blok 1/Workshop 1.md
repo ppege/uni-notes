@@ -120,10 +120,10 @@ z & 0 & 0 & 1 & 0
 $$
 
 ![[Pasted image 20251207164042.png]]
-The reflexive closure of a relation $R$ is defined by $R\cup\Delta$ where
+The reflexive closure of a relation $R$ on a set $A$ is defined by $R\cup\Delta$ where
 $$
 \begin{aligned}
-\Delta&=\{(a,a)\mid a\in R\}\\
+\Delta&=\{(a,a)\mid a\in A\}\\
 \tilde{R}&=R\cup\Delta\\
 &=\{(w,w),(w,x),(x,y),(z,y)\}\\
 &\cup\{(w,w),(x,x),(y,y),(z,z)\}\\
@@ -137,7 +137,7 @@ $$
 $$
 To create the symmetric closure $S$ of this, we must find $\tilde{R}\cup\tilde{R}^{-1}$. We define $\tilde{R}^{-1}$ by
 $$
-\tilde{R}^{-1}=\{(b,a) \mid (a,b) \in R\},
+\tilde{R}^{-1}=\{(b,a) \mid (a,b) \in \tilde{R}\},
 $$
 so in our case it is
 $$
@@ -162,11 +162,56 @@ To construct the transitive closure we need to find
 $$
 S^*=\bigcup\limits_{n=1}^{\infty} S^n
 $$
-We'll stop at the point where $S^n=S^{n-1}$. So first we'll find $S\circ S$:
+We'll stop at the point where $S^n=S^{n-1}$. It is wayyyy more simple to do this with a graph than to do this with just sets in text, so first we'll draw $S^1$:
+![[Pasted image 20260115204555.png]]
+Then we must draw $S^2$, which essentially means for every instance of an arrow from a to b and another arrow from b to c, we must ensure there is an arrow from a to c:
+![[Pasted image 20260115205235.png]]
+Then we must draw $S^3$, where we can transitivity-ify a pink arrow with a blue arrow:
+![[Pasted image 20260115205405.png]]
+Now, let's attempt to draw $S^4$, where we can transitivity-ify a pink/blue arrow with a green arrow... we cannot add more arrows that aren't already there. So in conclusion,
 $$
-S\circ S=\{\}
+\begin{aligned}
+S^*=&\{(w,w),(y,y),(x,x),(z,z),(w,x),\\
+&(x,w),(w,y),(y,w),(w,z),(z,w),\\
+&(x,y),(y,x),(x,z),(z,x),(y,z),(z,y)\}.
+\end{aligned}
 $$
 
+
 ![[Pasted image 20251207164058.png]]
+Again,
+$$
+\tilde{R}=\{(w,w),(x,x),(y,y),(z,z),(w,x),(x,y),(z,y)\}.
+$$
+It is once again much easier to construct $T$ with a graph. We start by drawing $\tilde{R}$:
+![[Pasted image 20260115210410.png]]
+Then we draw $\tilde{R}^2$:
+![[Pasted image 20260115210631.png]]
+Now, observe that if we were to attempt a $\tilde{R}^3$ or $\tilde{R}^2\circ\tilde{R}$, there will be no arrows added. The pink arrow that was added previously points to $y$, which does not itself point to anything else. Therefore we can conclude that the transitive closure $T$ of the reflexive closure $\tilde{R}$ is
+$$
+T=\{(w,w),(x,x),(y,y),(z,z),(w,x),(x,y),(z,y),(w,y)\}.
+$$
+
 ![[Pasted image 20251207164103.png]]
+To construct the symmetric closure $T'$ of $T$, we must find $T\cup T^{-1}$. We define $T^{-1}$ by
+$$
+T^{-1}=\{(b,a) \mid (a,b) \in T\},
+$$
+which then must be
+$$
+T^{-1}=\{(w,w),(x,x),(y,y),(z,z),(x,w),(y,x),(y,z),(y,w)\}.
+$$
+The symmetric closure must then be
+$$
+\begin{aligned}
+T' = &T\cup T^{-1}\\
+= &\{(w,w),(x,x),(y,y),(z,z),(w,x),(x,y),(z,y),(w,y)\}\\
+\cup&\{(w,w),(x,x),(y,y),(z,z),(x,w),(y,x),(y,z),(y,w)\}\\
+= &\{(w,w),(x,x),(y,y),(z,z),(w,x),(x,y),(z,y),(w,y),(x,w),(y,x),(y,z),(y,w)\}.
+
+\end{aligned}
+$$
+To help with the next question, let's draw $T'$:
+![[Pasted image 20260115212136.png]]
 ![[Pasted image 20251207164106.png]]
+An equivalence relation is a relation which is reflexive, symmetrical and transitive. Both $S^*$ and $T'$ are reflexive. They are also both symmetrical since any arrow has an arrow going the opposite way (ie $(a,b)\iff (b,a)$). However only $S^*$ is transitive since it satisfies the condition $\forall a,b,c \in A: (a,b)\in R\wedge (b,c)\in R\Rightarrow (a,c)\in R$. Meanwhile, we can simply prove by counterexample that $T'$ is *not* transitive since we have $(x,y)$ and $(y,z)$ but no $(x,z)$.

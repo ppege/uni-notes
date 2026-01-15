@@ -4,53 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "6e2d67913165fa23",
+        "id": "80f4917576f5a07a",
         "type": "tabs",
         "children": [
           {
-            "id": "012e2419509daf52",
+            "id": "9d34b8c9030bb879",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "uni/1. Semester/DTG/Blok 1/Concepts/2.3 Cartesian products and ordered pairs.md",
-                "mode": "source",
-                "source": false
+                "file": "uni/1. Semester/DTG/Blok 1/Workshop 1.pdf"
               },
-              "icon": "lucide-file",
-              "title": "2.3 Cartesian products and ordered pairs"
-            }
-          },
-          {
-            "id": "091c76094c08acbb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "uni/1. Semester/DTG/Blok 1/Workshop 1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
+              "icon": "lucide-file-text",
               "title": "Workshop 1"
             }
-          },
-          {
-            "id": "0fc107ca2e4c6c41",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "uni/1. Semester/DTG/Blok 1/Concepts/2.4 Relations.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2.4 Relations"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -107,7 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 291
+    "width": 381.5
   },
   "right": {
     "id": "c4fbc1dcca378451",
@@ -199,53 +168,52 @@
       "bases:Create new base": false
     }
   },
-  "active": "091c76094c08acbb",
+  "active": "9d34b8c9030bb879",
   "lastOpenFiles": [
+    "uni/1. Semester/DTG/Blok 1/Workshop 1.md",
     "uni/1. Semester/DTG/Blok 1/Workshop 1.pdf",
+    "attachments/Pasted image 20260115212136.png",
+    "attachments/Pasted image 20260115210631.png",
+    "attachments/Pasted image 20260115210410.png",
+    "attachments/Pasted image 20260115205405.png",
+    "attachments/Pasted image 20260115205235.png",
+    "attachments/Pasted image 20260115204555.png",
+    "uni/1. Semester/PBL/clanker.md",
+    "uni/1. Semester/PBL/begreber.md",
+    "uni/1. Semester/DTG/Blok 1/Concepts/2.4 Relations.md",
+    "uni/1. Semester/DTG/Blok 1/Concepts/2.2 Subsets and power sets.md",
+    "uni/1. Semester/DTG/Blok 1/Concepts/2.5 Closures of relations.md",
+    "uni/1. Semester/DTG/Blok 1/Concepts/2.3 Cartesian products and ordered pairs.md",
+    "uni/1. Semester/DTG/Blok 1/Concepts/1.2 Logical equivalence, tautologies and contradictions.md",
+    "uni/1. Semester/DTG/Blok 1/Concepts/1.3 Quantors and propositional functions.md",
+    "uni/1. Semester/DTG/Blok 4/Concepts/SRP.pdf",
+    "uni/1. Semester/DTG/Blok 4/Concepts/3 Modular arithmetic.md",
+    "uni/1. Semester/DTG/Blok 4/Concepts/4 Normal Forms.md",
+    "uni/1. Semester/DTG/Blok 1/Concepts/1 Propositional logic.md",
+    "uni/1. Semester/PBL/bla.md",
+    "uni/1. Semester/PBL/yoink.md",
+    "code/p1/build/Testing/Temporary/CTestCheckpoint.txt",
+    "code/p1/build/Testing/Temporary/LastTest.log.tmp",
+    "code/p1/build/CMakeFiles/Progress/34",
+    "code/p1/build/test/CMakeFiles/test_nav.dir/nav.c-93a5c81f.o.tmp",
+    "code/p1/build/CMakeFiles/Progress/33",
+    "code/p1/build/CMakeFiles/Progress/28",
+    "code/p1/build/CMakeFiles/Progress/27",
+    "code/p1/build/CMakeFiles/Progress/32",
     "uni/1. Semester/DTG/Blok 2/Workshop 2.md",
     "uni/1. Semester/DTG/Blok 3/Workshop 3.md",
-    "uni/1. Semester/DTG/Blok 1/Workshop 1.md",
     "uni/1. Semester/DTG/Blok 1/Concepts/2 Sets.md",
     "attachments/Pasted image 20251207200708.png",
     "attachments/Pasted image 20251207193106.png",
     "attachments/Pasted image 20251207192725.png",
-    "uni/1. Semester/DTG/Blok 1/Concepts/2.5 Closures of relations.md",
-    "uni/1. Semester/DTG/Blok 4/Concepts/SRP.pdf",
-    "uni/1. Semester/DTG/Blok 1/Concepts/2.4 Relations.md",
-    "uni/1. Semester/DTG/Blok 1/Concepts/2.3 Cartesian products and ordered pairs.md",
     "uni/1. Semester/DTG/Blok 1/Exercises/Session 1.1.md",
-    "uni/1. Semester/DTG/Blok 2/Workshop 2.pdf",
-    "uni/1. Semester/DTG/Blok 4/Concepts/4 Normal Forms.md",
     "uni/1. Semester/DTG/Blok 4/Concepts/4.1 Binary representations of normal forms.md",
-    "uni/1. Semester/DTG/Blok 4/Concepts/3 Modular arithmetic.md",
     "attachments/Pasted image 20251207164106.png",
-    "attachments/Pasted image 20251207164103.png",
-    "attachments/Pasted image 20251207164058.png",
-    "attachments/Pasted image 20251207164052.png",
-    "attachments/Pasted image 20251207164047.png",
-    "attachments/Pasted image 20251207164042.png",
-    "attachments/Pasted image 20251207164034.png",
     "uni/1. Semester/DTG/Blok 4/Workshop 4.md",
-    "code/p1/build/CMakeFiles/Progress/34",
-    "code/p1/build/test/CMakeFiles/test_nav.dir/compiler_depend.internal",
-    "code/p1/build/CMakeFiles/Progress/28",
-    "code/p1/build/CMakeFiles/Progress/27",
-    "code/p1/build/test/CMakeFiles/test_display.dir/compiler_depend.internal",
-    "code/p1/build/CMakeFiles/Progress/32",
-    "code/p1/build/CMakeFiles/Progress/31",
-    "code/p1/build/test/CMakeFiles/test_lotReader.dir/compiler_depend.internal",
     "code/IMPR/lectures/13/lecture-13-ppege/README.md",
     "code/p1/lib/external/Unity/extras/memory/readme.md",
     "code/p1/lib/external/Unity/extras/fixture/readme.md",
     "code/p1/lib/external/Unity/extras/bdd/readme.md",
-    "code/p1/lib/external/Unity/docs/UnityKnownIssues.md",
-    "code/p1/lib/external/Unity/docs/UnityHelperScriptsGuide.md",
-    "code/p1/lib/external/Unity/docs/UnityGettingStartedGuide.md",
-    "code/p1/lib/external/Unity/docs/UnityConfigurationGuide.md",
-    "code/p1/lib/external/Unity/docs/UnityChangeLog.md",
-    "code/p1/lib/external/Unity/docs/UnityAssertionsReference.md",
-    "code/p1/lib/external/Unity/docs/ThrowTheSwitchCodingStandard.md",
-    "code/p1/lib/external/Unity/docs/MesonGeneratorRunner.md",
-    "code/p1/lib/external/Unity/docs/CONTRIBUTING.md"
+    "code/p1/lib/external/Unity/docs/UnityKnownIssues.md"
   ]
 }
