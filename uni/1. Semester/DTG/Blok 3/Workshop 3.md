@@ -85,16 +85,17 @@ $n$ is the size of the input list $L$.
 
 Proposition $P(n)$: $\text{MergeSort}$ returns the sorted list containing the same elements as the input list $L$ with length $n$.
 ### Basis step
-$P(1)$, where we have a list $L$ with the size 1, which is already sorted.
+$P(0)$: here we have an empty list, which is of course trivially sorted. 
+$P(1)$: this list has 1 element, and is thus trivially sorted of course.
 ### Inductive hypothesis
-Assume $P(k)$ for all $0\leq k < n$.
+Assume $P(k)$ for all $k<n$, ie mergesort correctly returns a sorted list containing all input elements.
 ### Inductive step
-Show $P(k)\rightarrow P(n)$.
+The case of a list of size $n$, where $n\geq 2$.
 
 > [!info] $\text{MergeSort}$
 > $\text{MergeSort}$ works by splitting the input list $L$ into two sublists:
->    - $L_1=(a_0,a_1,\ldots,a_{m-1})$
->    - $L_2=(a_m,a_{m+1},...,a_{n-1})$
+>    - $L_1=(a_1,a_2,\ldots,a_{m})$
+>    - $L_2=(a_{m+1},a_{m+2},...,a_{n})$
 >  
 > Where $m=\lfloor\frac{n}{2}\rfloor$. Then $\text{MergeSort}$ is called on each half:
 >   - $S_1 = \text{MergeSort}(L_1)$.
@@ -102,40 +103,22 @@ Show $P(k)\rightarrow P(n)$.
 >  
 > Return $\text{Merge}(S_1,S_2)$.
 
-#### Substep 1: Proving $\text{MergeSort}$ returns a sorted list
-By the inductive hypothesis, both $S_1$ and $S_2$ are always sorted, as both list halves have a length that is $< k$ (thus it is already proven). Due to the assumption that the $\text{Merge}$ function always returns a sorted list, $\text{MergeSort}$ finally also returns a sorted list.
-#### Substep 2: Proving the list returned by $\text{MergeSort}$ contains the same elements as the input list $L$
-By the above definition of $\text{MergeSort}$, $L_1$ and $L_2$ combined contains exactly the elements of $L$. By the inductive hypothesis, $S_1$ contains exactly the elements of $L_1$, and $S_2$ contains exactly the elements of $L_2$. This, $S_1$ and $S_2$ in combination contain exactly the elements of $L$. Since the $\text{Merge}$ function combines the elements of $S_1$ and $S_2$, its output will contain all elements of the input list $L$ with no additions or losses.
-#### Conclusion
-By induction on $n$, it is proven that $\text{MergeSort}$ returns the sorted list containing the same elements as the input list $L$.
+ Mergesort splits the input list $L$ into two halves, $L_1$ and $L_2$, of sizes $\lfloor\frac{n}2\rfloor$ and  $\lceil\frac{n}2\rceil$ respectively. Since $n\geq 2$, both of these sizes are at least 0 and strictly less than $n$, so the IH applies. Then, by IH, both mergesorts on $L_1$ and $L_2$ return a sorted list containing all elements of $L_1$ and $L_2$, respectively. By the assumption that Merge correctly combines two sorted lists, Merge($S_1$, $S_2$) returns a sorted list containing all elements of $L$, which is what we wanted to show $\blacksquare$
 
 ![[Pasted image 20251121092309.png]]
 ![[Pasted image 20251121092318.png]]![[Pasted image 20251121092329.png]]
-$P(n)$: $\text{MergeSort}$ uses $n(log_2(n)+1)$ comparisons to sort a list $L$ with length $n=2^k$.
+$P(k)$: $\text{MergeSort}$ uses $n(\log_2{(n)}+1)=2^k(k+1)$ comparisons to sort a list $L$ with length $n=2^k$.
 ### Basis step
-#### P(1)
-$P(1)$: list $L$ with length $1=2^k$, $k=log_2(1)=0$
-In this case $n(log_2(n)+1)=1(log_2(1)+1)=1$ comparison is used. We can show this in the algorithm definition for $\text{MergeSort}$, as we at this step
+$P(0)$: list $L$ with length $2^0=1$
+In this case $2^0(0+1)=1(1)=1$ comparison is used. We can show this in the algorithm definition for $\text{MergeSort}$, as we at this step
 ![[Pasted image 20251121122212.png]]
 make the comparison $l<r$, which is false, since with a list $L$ of 1 element, the first and last index is the same. Due to this if-condition not going through, we skip directly to the "return $L$" part of the algorithm, and the algorithm terminates, leaving us with a total of 1 comparison.
-#### P(2)
-$P(2)$: list $L$ with length $2=2^k$, $k=log_2(2)=1$
-In this case $n(log_2(n)+1)=2(log_2(2)+1)=2(1+1)=4$ comparisons are used. We can show this in the algorithm definition for $\text{MergeSort}$, as we make the initial "if" comparison (that's 1 comparison so far), then these two recursive calls of itself
-![[Pasted image 20251121122611.png]]
-create exactly 1 comparison each (see $P(1)$). That brings us to 3 comparisons. Finally we have the call to $\text{Merge}$
-![[Pasted image 20251121122703.png]]
-Since we assume that $\text{Merge}$ uses exactly $a+b-1$ comparisons where $a$ and $b$ are the lengths of each of the two lists it merges, we find the amount of comparisons here to be $1+1-1=1$. This brings us to a total of 4 comparisons, verifying $P(2)$.
-#### P(4)
-$P(4)$: list $L$ with length $4=2^k$, $k=log_2(4)=2$
-In this case $n(log_2(n)+1)=4(log_2(4)+1)=12$ comparisons are used. We can show this in the algorithm definition for $\text{MergeSort}$. We first make the initial "if" comparison giving us 1 comparison so far, then these two recursive calls of itself
-![[Pasted image 20251121122611.png]]
-each add 4 to the count since these are just merge sorts of lists $L$ of length 2 (see P(2)). That brings us to 9 comparisons. Finally, we merge, and due to our assumption we know that the amount of comparisons is $a+b-1$ where $a$ and $b$ are the lengths of each of the two lists it merges, ie $a=2$ and $b=2$, so $2+2-1=3$ comparisons are added. This gives us a total of 12 comparisons, verifying $P(4)$. 
 ### Inductive hypothesis
-Assume $P(k)$ is true, ie $\text{MergeSort}$ uses $2^k(k+1)$ comparisons to sort a list $L$ of length $k$.
+Assume $P(k)$ is true, ie $\text{MergeSort}$ uses $2^k(k+1)$ comparisons to sort a list $L$ of length $2^k$.
 ### Inductive step
 Show that $P(k)\rightarrow P(k+1)$.
-In other words, a list $L$ of length $k+1$ needs $2^{k+1}(k+2)$ comparisons to be sorted by merge sort. In the $\text{MergeSort}$ algorithm, we initially use 1 comparison for the initial if-statement, then these calls
-![Pasted image 20251121122611.png](app://a6a1a1d793ef97059d37afc6a55b7dc54aba/Users/toof/uni/attachments/Pasted%20image%2020251121122611.png?1763724371065)
+In other words, a list $L$ of length $2^{k+1}$ needs $2^{k+1}(k+2)$ comparisons to be sorted by merge sort. In the $\text{MergeSort}$ algorithm, we initially use 1 comparison for the initial if-statement, then these calls
+![[Pasted image 20251121122611.png]]
 each use $2^k(k+1)$ comparisons per the inductive hypothesis. Then finally the merge step uses per our assumption $a+b-1$ comparisons, so $2^k+2^k-1$ comparisons. Adding these up we get $1+2^k(k+1)+2^k(k+1)+2^k+2^k-1$ comparisons, or
 $$
 \begin{aligned}
@@ -147,7 +130,7 @@ $$
 =&2^{k+1}(k+2)
 \end{aligned}
 $$
-This fulfills our induction on $k$, thus proving that $\text{MergeSort}$ uses $2^k(k+1)=n(log_2(n)+1)$ comparisons to sort a list $L$ with $n=2^k$ elements. Weak induction (or just induction) was used.
+This fulfills our induction on $k$, thus proving that $\text{MergeSort}$ uses $2^k(k+1)=n(\log_2{(n)}+1)$ comparisons to sort a list $L$ with $n=2^k$ elements. Weak induction (or just induction) was used.
 
 ![[Pasted image 20251121092341.png]]
 ![[Pasted image 20251121092347.png]]
@@ -159,11 +142,11 @@ Here $\text{MergeSort}$ uses less or equal to $2n\log_2{n}=2\cdot 2\log_2{2}=4$ 
 #### P(3)
 $P(3)$: list $L$ with length 3.
 Here $\text{MergeSort}$ uses less or equal to $2n\log_2{n}=2\cdot 3\log_2{3}\approx 9.51$ comparisons (therefore less or equal to 9). We can show this in the algorithm definition for $\text{MergeSort}$. First the initial if-statement is passed, giving us 1 comparison. Then, the function calls itself on one list of 1 element and one list of 2 elements since the input list of 3 elements is split in two
-![Pasted image 20251121122611.png](app://a6a1a1d793ef97059d37afc6a55b7dc54aba/Users/toof/uni/attachments/Pasted%20image%2020251121122611.png?1763724371065)
+![[Pasted image 20251121122611.png]]
 The merge sort call on the list with 1 element uses 1 comparison, and the call on the list with 2 elements uses 4 comparisons, see above definitions. This brings us to $1+1+4=6$ comparisons. Then when merge is called, $a+b-1=1+2-1=2$ comparisons are used. This brings us to a total of 8 comparisons before the algorithm terminates. 8 comparisons is indeed less or equal to 9 comparisons.
 #### P(4)
 $P(4)$: list $L$ with length 4.
-Here $\text{MergeSort}$ uses less or equal to $2n\log_2{n}=2\cdot 4\log_2{4}=16$ comparisons. See the above reasoning from Exercise 3.1 – this finds 12 comparisons, which is indeed less than or equal to 16 comparisons.
+Here $\text{MergeSort}$ uses less or equal to $2n\log_2{n}=2\cdot 4\log_2{4}=16$ comparisons. See the above reasoning from Exercise 3.1 – this finds 12 comparisons, which is indeed less than or equal to 16 comparisons. side note: showing this is not needed as a base case, though it does help understand it a little more in my opinion.
 ### Inductive hypothesis
 Assume that $P(k)$ is true for all $2\leq k<n$, in other words assume $\text{MergeSort}$ uses less or equal to $2k\log_2{k}$ comparisons to sort a list $L$ with $k$ elements.
 ### Inductive step
@@ -188,14 +171,6 @@ $$
 \lfloor\frac{k+1}{2}\rfloor+\lceil\frac{k+1}{2}\rceil=k+1
 $$
 
-$$
-\lfloor\frac{k+1}{2}\rfloor\leq\frac{2}{3}(k+1)
-$$
-
-$$
-\log_2{(\frac{2}{3}(k+1))}=\log_2{(k+1)}-\log_2{\frac{3}{2}}
-$$
-
 Which will be useful to simplify $T(k+1)$. We want to show that
 
 $$
@@ -208,13 +183,84 @@ $$
 2m\log_2{m}+2(k+1-m)\log_2{(k+1-m)}+k\leq 2(k+1)\log_2{(k+1)}.
 $$
 
-Since $m=\lfloor\frac{k+1}{2}\rfloor\leq\frac{k+1}{2}$, can use the fact that $\log_2{(m)}\leq\log_2{\frac{k+1}2}$. Similarly,  $k+1-m=\lceil\frac{k+1}{2}\rceil\geq\frac{k+1}{2}$ hence $\log_2{(k+1-m)}\leq\log_2{(k+1)}$. Using these inequalities we can conclude
+Since $m=\lfloor\frac{k+1}{2}\rfloor\leq\frac{k+1}{2}$, can use the fact that $\log_2{(m)}\leq\log_2{\frac{k+1}2}$. 
+
+In other news, $k+1-m=\lceil\frac{k+1}2\rceil\leq k+1$. Therefore, $\log_2{(k+1-m)}\leq\log_2{(k+1)}$. Using these inequalities we can conclude
 
 $$
 2m\log_2{m}\leq 2m\log_2{\frac{k+1}2}
 $$
-
+by multiplying both sides by $2m$, and
 $$
 2(k+1-m)\log_2{(k+1-m)}\leq 2(k+1-m)\log_2{(k+1)}
 $$
+by multiplying both sides by $2(k+1-m)$. By adding both the inequalities together:
+$$
+\begin{aligned}
+&2m\log_2{m}+2(k+1-m)\log_2{(k+1-m)}\\
+\leq &2m\log_2{\frac{k+1}2}+2(k+1-m)\log_2{(k+1)}
+\end{aligned}
+$$
+And then adding $k$ to both sides:
+$$
+\begin{aligned}
+&2m\log_2{m}+2(k+1-m)\log_2{(k+1-m)}+k\\
+\leq &2m\log_2{\frac{k+1}2}+2(k+1-m)\log_2{(k+1)}+k
+\end{aligned}
+$$
+Notice that the left side is exactly $T(k+1)$:
+$$
+\begin{aligned}
+&2m\log_2{m}+2(k+1-m)\log_2{(k+1-m)}+k\\
+=T(k+1)=&2m\log_2{m}+2(k+1-m)\log_2{(k+1-m)}+k,
+\end{aligned}
+$$
+So we can simply replace that left hand side:
+$$
+T(k+1)\leq 2m\log_2{\frac{k+1}2}+2(k+1-m)\log_2{(k+1)}+k
+$$
+Now we simplify the right side with the log rule $\log{\frac{a}b}=\log{(a)}-\log({b})$ and $\log_b(b)=1$:
+$$
+T(k+1)\leq 2m(\log_2{(k+1)}-1)+2(k+1-m)\log_2{(k+1)}+k
+$$
+Then distribute that $2m$:
+$$
+T(k+1)\leq 2m\log_2{(k+1)}-2m+2(k+1-m)\log_2{(k+1)}+k
+$$
+We can then rearrange this
+$$
+T(k+1)\leq 2m\log_2{(k+1)}+2(k+1-m)\log_2{(k+1)}-2m+k
+$$
+such that it is obvious that $\log_2{(k+1)}$ may be factored out:
+$$
+T(k+1)\leq \log_2{(k+1)}(2m+2(k+1-m))-2m+k
+$$
+Distributing the $2(k+1-m)$:
+$$
+T(k+1)\leq \log_2{(k+1)}(2m+2k+2-2m)-2m+k
+$$
+makes it obvious that the $2m$ terms cancel out:
+$$
+T(k+1)\leq \log_2{(k+1)}(2k+2)-2m+k
+$$
+after which we can re-pull out the $2$:
+$$
+T(k+1)\leq 2(k+1)\log_2{(k+1)}-2m+k
+$$
+Finally, to finish the proof, we must show that $-2m+k\leq 0$, ie $k\leq 2m$, ie $k\leq 2\lfloor\frac{k+1}{2}\rfloor$. Here we do a split case. If $k$ is odd, then $k+1$ is even, so $m=\frac{k+1}2$, therefore $2m=k+1>k$. If $k$ is even, then $k+1$ is odd, so $m=\frac{k}2$, and $2m=k$. In conclusion, this shows that the term $-2m+k\leq 0$, which means (due to the direction of our inequality) that the term can be dropped. We now have
+$$
+T(k+1)\leq 2(k+1)\log_2{(k+1)}
+$$
+which is what we set out to prove $\blacksquare$
+
 ![[Pasted image 20251121092352.png]]
+Strong induction was used due to the IH having the assumption apply to $2\leq k < n$.
+
+In big O notation we drop the constant 2 and as such, the result:
+$$
+T(n)\leq 2n\log_2{n}
+$$
+tells us that the time complexity of mergesort is within $O(n\log_2{n})$ with respect to comparisons.
+$$
+T(n)\in O(n\log{n}).
+$$
