@@ -35,17 +35,34 @@ $$
 $$
 P(1): \frac{1(1+1)}2=1
 $$
-### Induction step
+### Inductive hypothesis
 Assume:
 $$
 P(k):1+\ldots+k=\frac{k(k+1)}2
 $$
+### Induction step
 Then we must show
 $$
 P(k+1):1+\ldots+(k+1)=\frac{(k+1)(k+2)}2.
 $$
-The left hand side contains the left hand side of the hypothesis:
+The left hand side contains the left hand side of the IH:
 $$
 1+\ldots+k+(k+1)=\frac{k(k+1)}2+(k+1)
 $$
+We can then create a common demoninator on the RHS
+$$
+=\frac{k(k+1)}2+\frac{2(k+1)}2
+$$
+which lets us add the fractions and reduce
+$$
+=\frac{k(k+1)+2(k+1)}2
+$$
+$$
+=\frac{k^2+3k+2}2
+$$
+$$
+=\frac{(k+1)(k+2)}2
+$$
+
+which shows what we set out to prove $\blacksquare$
 

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "uni/1. Semester/DTG/Blok 3/Workshop 3.md",
+                "file": "uni/1. Semester/DTG/Blok 3/Concepts/1 Induction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Workshop 3"
+              "title": "1 Induction"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 361.50390243530273,
-    "collapsed": true
+    "width": 361.50390243530273
   },
   "right": {
     "id": "c4fbc1dcca378451",
@@ -173,8 +172,8 @@
   },
   "active": "6f46a1a6d82f62d5",
   "lastOpenFiles": [
-    "attachments/Pasted image 20251121122611.png",
     "uni/1. Semester/DTG/Blok 3/Workshop 3.md",
+    "attachments/Pasted image 20251121122611.png",
     "uni/1. Semester/DTG/Blok 2/Workshop 2.md",
     "uni/1. Semester/DTG/Blok 2/Concepts/1.1 Big O, big omega and big theta notation.md",
     "uni/1. Semester/DTG/Blok 2/Concepts/1 Functions.md",
@@ -216,7 +215,6 @@
     "attachments/Pasted image 20251207193106.png",
     "attachments/Pasted image 20251207192725.png",
     "uni/1. Semester/DTG/Blok 1/Exercises/Session 1.1.md",
-    "attachments/Pasted image 20251207164106.png",
     "uni/1. Semester/DTG/Blok 4/Workshop 4.md",
     "code/IMPR/lectures/13/lecture-13-ppege/README.md"
   ]
