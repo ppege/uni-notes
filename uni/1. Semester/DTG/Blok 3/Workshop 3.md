@@ -157,9 +157,7 @@ For a list of size $k+1$, $\text{MergeSort}$ divides it into two sublists, which
 
 Let $m=\lfloor\frac{k+1}{2}\rfloor$. The two sublists then have the sizes $m$ and $k + 1 - m$. This follows the fact that $\lfloor\frac{k+1}{2}\rfloor+\lceil\frac{k+1}{2}\rceil=k+1$.
 
-By the inductive hypothesis, the number of comparisons for the first sublist must at most be $2m\log_2{m}$, while the number of comparisons for the second sublist must at most be $2(k+1-m)\log_2{(k+1-m)}$. By our assumption that $\text{Merge}$ uses exactly $a+b-1$ comparisons with $a$ and $b$ as the sizes of the lists being merged, we know that the merge step must use $m + (k + 1 - m) - 1$ comparisons, which is just $k$ comparisons. With that, the total number of comparisons total out to $2m\log_2{m}+2(k+1-m)\log_2{(k+1-m)}+k$ comparisons.
-
-Let's define this total number of comparisons that $\text{MergeSort}$ at most uses to sort a $k+1$ elements as $T(k+1)$:
+By the inductive hypothesis, the number of comparisons for the first sublist must at most be $2m\log_2{m}$, while the number of comparisons for the second sublist must at most be $2(k+1-m)\log_2{(k+1-m)}$. By our assumption that $\text{Merge}$ uses exactly $a+b-1$ comparisons with $a$ and $b$ as the sizes of the lists being merged, we know that the merge step must use $m + (k + 1 - m) - 1$ comparisons, which is just $k$ comparisons. With that, the total number of comparisons total out to $2m\log_2{m}+2(k+1-m)\log_2{(k+1-m)}+k$ comparisons. Let's define this total number of comparisons that $\text{MergeSort}$ at most uses to sort a $k+1$ elements as $T(k+1)$:
 
 $$
 T(k+1)=2m\log_2{m}+2(k+1-m)\log_2{(k+1-m)}+k,
@@ -183,32 +181,30 @@ $$
 2m\log_2{m}+2(k+1-m)\log_2{(k+1-m)}+k\leq 2(k+1)\log_2{(k+1)}.
 $$
 
-Since $m=\lfloor\frac{k+1}{2}\rfloor\leq\frac{k+1}{2}$, can use the fact that $\log_2{(m)}\leq\log_2{\frac{k+1}2}$. 
-
-In other news, $k+1-m=\lceil\frac{k+1}2\rceil\leq k+1$. Therefore, $\log_2{(k+1-m)}\leq\log_2{(k+1)}$. Using these inequalities we can conclude
+Since $m=\lfloor\frac{k+1}{2}\rfloor\leq\frac{k+1}{2}$, can use the fact that $\log_2{(m)}\leq\log_2{\frac{k+1}2}$. Furthermore, $k+1-m=\lceil\frac{k+1}2\rceil\leq k+1$. Therefore, $\log_2{(k+1-m)}\leq\log_2{(k+1)}$. Using these inequalities we can conclude
 
 $$
 2m\log_2{m}\leq 2m\log_2{\frac{k+1}2}
 $$
-by multiplying both sides by $2m$, and
+by multiplying both sides of the first inequality by $2m$, and
 $$
 2(k+1-m)\log_2{(k+1-m)}\leq 2(k+1-m)\log_2{(k+1)}
 $$
-by multiplying both sides by $2(k+1-m)$. By adding both the inequalities together:
+by multiplying both sides of the second inequality by $2(k+1-m)$. We add both the inequalities together:
 $$
 \begin{aligned}
 &2m\log_2{m}+2(k+1-m)\log_2{(k+1-m)}\\
 \leq &2m\log_2{\frac{k+1}2}+2(k+1-m)\log_2{(k+1)}
 \end{aligned}
 $$
-And then adding $k$ to both sides:
+And then add $k$ to both sides:
 $$
 \begin{aligned}
 &2m\log_2{m}+2(k+1-m)\log_2{(k+1-m)}+k\\
 \leq &2m\log_2{\frac{k+1}2}+2(k+1-m)\log_2{(k+1)}+k
 \end{aligned}
 $$
-Notice that the left side is exactly $T(k+1)$:
+The left hand side of the inequality is now exactly $T(k+1)$:
 $$
 \begin{aligned}
 &2m\log_2{m}+2(k+1-m)\log_2{(k+1-m)}+k\\
@@ -256,11 +252,11 @@ which is what we set out to prove $\blacksquare$
 ![[Pasted image 20251121092352.png]]
 Strong induction was used due to the IH having the assumption apply to $2\leq k < n$.
 
-In big O notation we drop the constant 2 and as such, the result:
+In big O notation we drop coefficients and as such the result
 $$
 T(n)\leq 2n\log_2{n}
 $$
-tells us that the time complexity of mergesort is within $O(n\log_2{n})$ with respect to comparisons.
+tells us that the time complexity of mergesort is within $O(n\log{n})$ with respect to comparisons.
 $$
 T(n)\in O(n\log{n}).
 $$
