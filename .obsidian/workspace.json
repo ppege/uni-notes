@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "uni/1. Semester/DTG/Blok 3/Workshop 3.md",
-                "mode": "source",
+                "file": "uni/1. Semester/DTG/Blok 4/Workshop 4.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Workshop 3"
+              "title": "Workshop 4"
             }
           }
         ]
@@ -172,19 +172,21 @@
   },
   "active": "6f46a1a6d82f62d5",
   "lastOpenFiles": [
-    "uni/1. Semester/DTG/Blok 3/Concepts/1 Induction.md",
+    "uni/1. Semester/DTG/Blok 4/Concepts/4 Normal Forms.md",
+    "uni/1. Semester/DTG/Blok 4/Workshop 4.md",
     "uni/1. Semester/DTG/Blok 3/Workshop 3.md",
+    "uni/1. Semester/DTG/Blok 4/Concepts/SRP.pdf",
+    "uni/1. Semester/DTG/Blok 3/Workshop 3.pdf",
+    "uni/1. Semester/DTG/Blok 4/Concepts/4.1 Binary representations of normal forms.md",
+    "uni/1. Semester/DTG/Blok 4/Concepts/3 Modular arithmetic.md",
+    "uni/1. Semester/DTG/Blok 4/Concepts/2 Proofs.md",
+    "uni/1. Semester/DTG/Blok 4/Concepts/1 Inference.md",
+    "uni/1. Semester/DTG/Blok 3/Concepts/1 Induction.md",
     "attachments/Pasted image 20251121122611.png",
     "uni/1. Semester/DTG/Blok 2/Workshop 2.md",
     "uni/1. Semester/DTG/Blok 2/Concepts/1.1 Big O, big omega and big theta notation.md",
     "uni/1. Semester/DTG/Blok 2/Concepts/1 Functions.md",
     "uni/1. Semester/DTG/Blok 2/Workshop 2.pdf",
-    "uni/1. Semester/DTG/Blok 4/Concepts/SRP.pdf",
-    "uni/1. Semester/DTG/Blok 4/Concepts/4.1 Binary representations of normal forms.md",
-    "uni/1. Semester/DTG/Blok 4/Concepts/4 Normal Forms.md",
-    "uni/1. Semester/DTG/Blok 4/Concepts/3 Modular arithmetic.md",
-    "uni/1. Semester/DTG/Blok 4/Concepts/2 Proofs.md",
-    "uni/1. Semester/DTG/Blok 4/Concepts/1 Inference.md",
     "uni/1. Semester/DTG/Blok 1/Concepts/2.5 Closures of relations.md",
     "uni/1. Semester/DTG/Blok 1/Workshop 1.md",
     "uni/1. Semester/PBL/clanker.md",
@@ -210,13 +212,10 @@
     "code/p1/build/test/CMakeFiles/test_nav.dir/nav.c-93a5c81f.o.tmp",
     "code/p1/build/CMakeFiles/Progress/33",
     "code/p1/build/CMakeFiles/Progress/28",
-    "code/p1/build/CMakeFiles/Progress/27",
     "uni/1. Semester/DTG/Blok 1/Concepts/2 Sets.md",
     "attachments/Pasted image 20251207200708.png",
     "attachments/Pasted image 20251207193106.png",
     "attachments/Pasted image 20251207192725.png",
-    "uni/1. Semester/DTG/Blok 1/Exercises/Session 1.1.md",
-    "uni/1. Semester/DTG/Blok 4/Workshop 4.md",
-    "code/IMPR/lectures/13/lecture-13-ppege/README.md"
+    "uni/1. Semester/DTG/Blok 1/Exercises/Session 1.1.md"
   ]
 }

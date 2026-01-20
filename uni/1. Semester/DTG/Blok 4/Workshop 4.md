@@ -109,7 +109,7 @@ QED.
 
 
 ![[Pasted image 20251127094357.png]]
-So what we must prove is that $9^2-x\mod 5=2$ if and only if $x$ is odd. Lets start with simplifying the condition:
+So what we must prove is that $9^x-2\mod 5=2$ if and only if $x$ is odd. Lets start with simplifying the condition:
 $$
 (9^x-2)\mod 5=2\iff 9^x\equiv 4\pmod 5
 $$
