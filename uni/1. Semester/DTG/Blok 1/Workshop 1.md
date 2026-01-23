@@ -63,17 +63,13 @@ $S$ is not transitive; we can prove this by counterexample. Dee is $S$-related t
 
 ![[Pasted image 20251207163956.png]]
 
-For option a), we can use the above text to infer that the ability to see ones post is analog to following them -- therefore, anytime $x_n$ posts something, then $x_{n-1}$ (who follows $x_n$) re-publishes it; then, $x_{n-2}$ can see anytime $x_n$ posts through the re-publishing of $x_{n-1}$.
+For option a), we can see that the change in our relation $S$ looks very similar to what would happen in the first generation of the transitive closure, ie a composition between $S$ and itself, or the second power of $S$:
 $$
-x_{n-1}\ S\ x_n\ \wedge x_{n-2}\ S\ x_{n-1}\ \Rightarrow x_{n-2}\ S\ x_n.
+S^2=S\circ S
 $$
-We operate here under the assumption that "x follows y" is entirely equivalent to "y's posts are visible to x."
+Here we draw "transitivity arrows" in only one generation, so for any example of $(a,b)\vee(b,c)$ in $S$, we add $(a,c)$ to the set (without having this new $(a,c)$ count in the following looking for examples). 
 
-For option b), where we have a chain reaction, it becomes inductive in nature
-$$
-x_{n-k}\ S\ x_{n-k+1}\ \wedge x_{n-k+1}\ S\ x_{n-k+2}\ \wedge\ldots\wedge x_{n-1}\ S\ x_n\ \Rightarrow x_{n-k}\ S\ x_n. 
-$$
-This option is related to the transitive closure $S^*$ of our relation $S$, which is the smallest transitive relation containing $S$. The definition of the transitive closure is as follows:
+For option b), we do the full transitive closure where we basically keep compositing S onto itself until they no longer change anything. The definition of the transitive closure is as follows:
 $$
 S^*=\bigcup\limits_{n=1}^{\infty} S^n
 $$
